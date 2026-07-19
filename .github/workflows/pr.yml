@@ -1,0 +1,12 @@
+name: Pull Request Workflow
+
+on:
+  pull_request:
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: PR Trigger
+        run: echo "This workflow runs only for pull requests."
